@@ -1,0 +1,247 @@
+/* Write CSS below */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+html {
+  font-family: Oswald, Helvetica, sans-serif;
+  background-color: #FDFFFC ;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0px;
+  background-color: white;
+}
+
+
+header {
+  background-color: #E4E2DD;
+  grid-area: header;
+}
+
+
+h2 {
+  text-transform: uppercase;
+}
+
+
+
+
+/* Grid Layout */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  grid-template-areas:
+  "header header header header"
+  "nav nav nav nav"
+  "banner1 banner1 banner1 banner1"
+  "completes completes completes completes"
+  "banner2 banner2 banner2 banner2"
+  "decks decks decks decks"
+  "banner3 banner3 banner3 banner3"
+  "trucks trucks trucks trucks"
+  "banner4 banner4 banner4 banner4"
+  "wheels wheels wheels wheels"
+  "footer footer footer footer";
+}
+
+
+/*header styles*/
+
+
+.top-bar {
+  grid-area: header;
+  color: #419D78;
+  background-color: black;
+  text-align: center;
+}
+
+
+#logo {
+  grid-area: header;
+  height: 150px;
+  width: 375px;
+}
+
+
+/*navigation styles*/
+
+
+.nav {
+  grid-area: nav;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  word-spacing: 20px;
+  text-transform: uppercase;
+}
+
+
+/*link styles*/
+
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
+a:hover, a:active {
+   text-decoration: none;
+   color:#419D78
+  }
+
+
+  /*product stlyes*/
+
+
+.completes-banner {
+  grid-area: banner1;
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+
+
+.completes-container {
+  grid-area: completes;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  padding-bottom: 20px;
+}
+
+
+.decks-banner {
+  grid-area: banner2;
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+
+
+.decks-container {
+  grid-area: decks;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  padding-bottom: 20px
+}
+
+
+.trucks-banner {
+  grid-area: banner3;
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+
+
+.trucks-container {
+  grid-area: trucks;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  padding-bottom: 20px
+}
+
+
+.wheels-banner {
+  grid-area: banner4;
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+
+
+.wheels-container {
+  grid-area: wheels;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  padding-bottom: 20px
+}
+
+
+.product-art {
+  width: 350px;
+  height: 400px;
+  border-radius: 25px;
+}
+
+
+.product-description {
+  overflow-wrap: break-word;
+  inline-size: 400px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.promotion {
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+}
+
+
+.sale {
+    color: firebrick;
+    font-size: 20px;
+    text-transform: uppercase ;
+}
+
+
+.old {
+  color: gray;
+}
+
+
+/*footer styles*/
+
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+/*media styles*/
+
+
+@media screen and (max-width: 1920px) {
+  .completes-banner {
+    max-width: 100%;
+  }
+  .decks-banner {
+    max-width: 100%;
+  }
+  .trucks-banner {
+    max-width: 100%;
+  }
+   .wheels-banner {
+    max-width: 100%;
+  }
+}
+
